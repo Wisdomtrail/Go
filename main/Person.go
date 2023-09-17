@@ -16,4 +16,3 @@ func (p Person) getPersonInformation() string {
 	p.Age = 45
 	p.Name = "sunday"
 	return p.Name + " " + strconv.Itoa(p.Age)
-}
