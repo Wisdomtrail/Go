@@ -1,7 +1,5 @@
 package main
 
-import "strconv"
-
 func main() {
 	person := new(Person)
 	println(person.getPersonInformation())
@@ -12,7 +10,7 @@ type Person struct {
 	Age  int
 }
 
-func (p Person) getPersonInformation() string {
-	p.Age = 45
-	p.Name = "sunday"
-	return p.Name + " " + strconv.Itoa(p.Age)
+func (p Person) getPersonInformation() interface{} {
+
+	return nil
+}
